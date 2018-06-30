@@ -11,9 +11,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBxr_QJmk7cmQGqCCvCOttpuyATdQXAAR8",
-  authDomain: "ionic-firebase-3c24c.firebaseapp.com",
-  databaseURL: "https://ionic-firebase-3c24c.firebaseio.com",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
   projectId: "ionic-firebase-3c24c",
   storageBucket: "ionic-firebase-3c24c.appspot.com",
   messagingSenderId: "188837274385"
