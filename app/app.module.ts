@@ -7,6 +7,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBxr_QJmk7cmQGqCCvCOttpuyATdQXAAR8",
+  authDomain: "ionic-firebase-3c24c.firebaseapp.com",
+  databaseURL: "https://ionic-firebase-3c24c.firebaseio.com",
+  projectId: "ionic-firebase-3c24c",
+  storageBucket: "ionic-firebase-3c24c.appspot.com",
+  messagingSenderId: "188837274385"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -14,7 +26,9 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
